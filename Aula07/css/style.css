@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 200px;
+}
+
+.categoria{
+    padding-top: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* distribui espaços de forma igual */
+}
+
+.menu-principal ul{
+    list-style: none; /* remove as bolinhas da lista */
+}
+
+.menu-principal ul li{
+    display: inline-block; /* colocar todas as li na mesma linha */
+}
+.menu-principal ul li a{
+    background-color: rgb(182, 110, 42);
+    color: rgb(12, 12, 190); /* cor do texto do menu */
+    text-decoration: none; /* tira linha do link */
+    text-transform: uppercase; /* deixa todo o texto em maiusculo */
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    font-size: 15px ;
+    border-radius: 50px;
+}
+.menu-principal ul li a:hover{    /* transição quando para o mouse sobre o texto */
+    background-color: rgb(5, 20, 11);
+    color: aquamarine;
+    transition: 0.60s ease; /* pausa de exibição */
+    padding: 10px 35px;
+}
+
+#pagina-home{
+    height: 613px;
+    background: linear-gradient(rgba(221, 221, 221, 0.452), rgba(241, 238, 238, 0.507)), url( ../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
