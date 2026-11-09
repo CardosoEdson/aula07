@@ -1,8 +1,25 @@
-*{
+body{
     margin: 0;
     padding: 0;
+    background-color: #111111;
 }
-
+header, .meu-cabecalho{
+    margin: 0 !important;
+    padding-bottom: 20px;
+    .meu-cabecalho{
+        margin: 0 !important;
+        padding: 20px 0 !important;
+        background-color: #1a1a1a; /*Cor de fundo escura para destacar a palavra Home */
+        
+    }
+}
+.meu-cabecalho h1{
+    margin: 0 !important; /* remove a margem automática que cria o espaço em branco entre o baner e o corpo */
+    padding: 0px 0 !important ; /* cria o espaço em cima e embaixo do texto de forma segura*/
+    color: #ffffff !important;
+     font-size: 28px;
+     text-align: center; /* mantém o texto centralizado */
+}
 .logo{
     width: 200px;
 }
@@ -43,4 +60,19 @@
     background: linear-gradient(rgba(221, 221, 221, 0.452), rgba(241, 238, 238, 0.507)), url( ../img/banner.jpg);
     background-position: center;
     background-size: cover;
+}
+.vem-ai{
+    margin-top: 0;
+    display: flex;
+    justify-content: center; /* centraliza o vídeo horizontalmente*/
+    align-items: center; /* alinha verticalmente se houver altura na seção */
+    padding: 60px 20px; /* Dá o espaço acima e abaixo do video para o fundo aparecer */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)); 
+}
+.vem-ai iframe {
+    border-radius: 8px; /* deixa as bordas do player ligeiramente arredondadas */
+    box-shadow: 0 4px 15px rgba(0,0,0, 0.3); /* Aplica uma sombra suave de cinema */
 }
